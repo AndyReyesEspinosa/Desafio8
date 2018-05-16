@@ -1,0 +1,39 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+div {
+	background: blue;
+}
+
+
+
+body {
+	display: grid;
+	grid-template-columns: 100px 100px 200px 100px 100px;
+	grid-template-rows: 100px 100px 100px;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	grid-template-areas: "c1 c2 c2 c3 c3"
+						 "c4 c2 c2 c5 c5"
+						 "c6 c7 c8 c9 c10";
+}
+
+.dos,
+.tres,
+.siete,
+.ocho {
+	grid-area: c2;
+}
+
+.cuatro,
+.cinco {
+	grid-area: c3;
+}
+
+.nueve,
+.diez {
+	grid-area: c5;
+} 
